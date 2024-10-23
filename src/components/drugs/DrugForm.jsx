@@ -149,7 +149,7 @@ export default function DrugForm(props) {
         barCodeStatus: true,
         name : props.savedItem ? props.savedItem.name : '',
         brandname: props.savedItem ? (props.savedItem.brandname || '') : '',
-        type: props.drugTypeOptions ? (props.savedItem ? props.savedItem.type : '') : '',
+        type: props.drugTypeOptions ? (props.savedItem ? props.savedItem.type_id : '') : '',
         description: props.savedItem ? (props.savedItem.description || '') : '',
         barcode: props.savedItem ? (props.savedItem.barcode || '') : '',
         middleunitnum: props.savedItem ? props.savedItem.middleunitnum : '',
