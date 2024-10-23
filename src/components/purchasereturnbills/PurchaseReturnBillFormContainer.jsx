@@ -280,7 +280,7 @@ export default function PurchaseReturnBillFormContainer() {
     }
 
     function fetchListOfDrugsInsidePurchaseBill(id) {
-        axios.get(`api/v1/purchases/items?range=all&filter=purchasebill_id:eq[${id}]&fields=id,drug_id,drugname,drugbarcode`)
+        axios.get(`api/v1/purchases/items?range=all&filter=purchasebill_id:eq[${id}]&fields=id,drug_id,name,barcode`)
         .then((response)=>{
             setDrugOptions(response.data.data);
         })
